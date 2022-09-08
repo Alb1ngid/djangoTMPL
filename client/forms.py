@@ -15,6 +15,7 @@ class OrderForm(forms.ModelForm):
         fields = ['name', 'contacts', 'description']
 
 
+
 class OrderUpdateForm(forms.ModelForm):
     class Meta:
         model = Order
