@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block page %}
+    <h1>Инфо клиента</h1>
+    <div>Имя: {{ client.name }}</div>
+    <div>Адрес: {{ client.address }}</div>
+    <div>Активен: {{ client.active }}</div>
+    <div>Фото:
+        {% if client.photo %}
+            <img height="100px" src="{{ client.photo.url }}"/>
+        {% else %}
+            <span>Нет фото</span>
+        {% endif %}
+    </div>
+{% endblock %}
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Sec

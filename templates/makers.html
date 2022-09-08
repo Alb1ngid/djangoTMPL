@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block page %}
+    <br>
+    <div><h1>Список ПРОИЗВОДИТЕЛЕЙ:</h1></div>
+    <br>
+   {% for bottle in object_list %}
+        <div>{{ bottle.maker }}</div>
+       <br>
+    {% endfor %}
+
+{% endblock %}
